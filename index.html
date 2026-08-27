@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CID AI BOT</title>
+  <link rel="stylesheet" href="styles/chat.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <div class="brand">
+        <div class="brand__avatar">CID</div>
+        <div>
+          <div class="brand__name">CID AI BOT</div>
+          <div class="brand__status">Guest &middot; Online</div>
+        </div>
+      </div>
+      <button type="button" id="clearHistoryBtn" class="btn-ghost">Hapus Riwayat</button>
+    </header>
+
+    <section id="messageList" class="message-list" aria-live="polite"></section>
+
+    <form id="chatForm" class="chat-form">
+      <input
+        id="chatInput"
+        class="chat-form__input"
+        type="text"
+        autocomplete="off"
+        placeholder="Ketik pesan kamu di sini..."
+        aria-label="Pesan"
+      />
+      <button type="submit" class="chat-form__submit">Kirim</button>
+    </form>
+  </main>
+
+  <script src="scripts/knowledgeBase.js"></script>
+  <script src="scripts/matcher.js"></script>
+  <script src="scripts/storage.js"></script>
+  <script src="scripts/styleCloner.js"></script>
+  <script src="scripts/chatEngine.js"></script>
+  <script src="scripts/ui.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
